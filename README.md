@@ -15,11 +15,11 @@ Kubernetes cluster +  MetalLB + Istio 0.7.1 + Jaeger
 ## Create directory
 mkdir -p /data/vm/vagrant/kubernetes/01-cluster-metallb-istio-0.7.1/logs
 
-##Vagrant setup
+## Vagrant setup
 * Copy Vagranfile to /data/vm/vagrant/kubernetes/01-cluster-metallb-istio-0.7.1/
 * vagrant up
 
-##Validate Kubernetes Cluster
+## Validate Kubernetes Cluster
 * Browse http://172.16.0.131/productpage 
 * Refresh pages a three times, pausing 2 seconds between refresh
 * Login using user name "jason" and no password

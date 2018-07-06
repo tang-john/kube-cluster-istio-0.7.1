@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
   #config.vm.box = "ubuntu/xenial64"
 
   config.vm.define "kubemaster" do |v|
-    v.vm.box = "johntang/kubemaster-metallb"
+    v.vm.box = "johntang/kubemaster-istio-0.7.1"
     v.vm.box_version = "1.0.0"
     v.vm.hostname = "kubemaster"
     v.vm.network "private_network", ip: "172.16.0.40"
@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.define "kubenode1" do |v|
-    v.vm.box = "johntang/kubenode1-metallb"
+    v.vm.box = "johntang/kubenode1-istio-0.7.1"
     v.vm.box_version = "1.0.0"
     v.vm.hostname = "kubenode1"
     v.vm.network "private_network", ip: "172.16.0.41"
@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.define "kubenode2" do |v|
-    v.vm.box = "johntang/kubenode2-metallb"
+    v.vm.box = "johntang/kubenode2-istio-0.7.1"
     v.vm.box_version = "1.0.0"
     v.vm.hostname = "kubenode2"
     v.vm.network "private_network", ip: "172.16.0.42"

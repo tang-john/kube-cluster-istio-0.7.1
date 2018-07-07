@@ -1,5 +1,5 @@
 # kube-cluster-istio-0.7.1
-Kubernetes cluster +  MetalLB + Istio 0.7.1 + Jaeger
+Kubernetes cluster +  MetalLB + Istio 0.7.1 + Jaeger + Bookinfo sample app
 
 ## Requirements
 * Vagrant
